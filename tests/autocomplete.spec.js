@@ -18,7 +18,7 @@ test("Autocomplete testing",async({page})=>{
 })
 
 
-test.only("Autocomplete testing using loop",async({page})=>{
+test("Autocomplete testing using loop",async({page})=>{
     await page.goto("https://www.google.com/");
 
     await page.locator('div[role="button"]:has-text("Not interested")').click();

@@ -24,7 +24,7 @@ test("My sixth test",async ({page})=>{
     expect("Kishan Kumar ".includes("Kumar")).toBeFalsy();
 })
 
-test.only("Verify Application Title", async ({page})=>{
+test("Verify Application Title", async ({page})=>{
     await page.goto("http://google.com");
 
     const url= await page.url();
